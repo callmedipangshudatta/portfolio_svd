@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +13,7 @@
 <body>
 
     <div class="dot-grid"></div>
+    <div class="noise-overlay"></div>
 
     <!-- ══ HEADER ══ -->
     <header id="header">
@@ -21,6 +24,7 @@
             <a href="#home"         class="nav-link active">Home</a>
             <a href="#competencies" class="nav-link">Expertise</a>
             <a href="#skills"       class="nav-link">Skills</a>
+            <a href="#experience"   class="nav-link">Experience</a> <!-- Added Experience Link -->
             <a href="#projects"     class="nav-link">Projects</a>
             <a href="#contact"      class="nav-link">Contact</a>
         </nav>
@@ -41,26 +45,30 @@
             </div>
             <h1>Hi, I'm<br><span class="name-highlight">Sneha<br>Sharma.</span></h1>
             <div class="typing-row">
-    <span class="typing-word" id="typingWord"></span><span class="cursor-bar">|</span>
-</div>
-            <p>3rd-year CS student specialising in AI/ML at Bennett University. I build real things with Python &amp; C++, maintain a 115-day LeetCode streak, and apply machine learning and backend engineering to problems that actually matter. I bring a structured, mentoring mindset to my development process, breaking down complex architectures into actionable, highly organized routines.</p>
+                <span class="typing-word" id="typingWord"></span><span class="cursor-bar">|</span>
+            </div>
+            <p>3rd-year CS student specializing in AI/ML at Bennett University. I build practical software with Python & C++, maintain a 115+ day LeetCode streak, and apply machine learning and backend engineering to real-world problems. I bring a structured, mentoring mindset to my development process - breaking down complex system architectures into clean, modular components and actionable routines.</p>
             <div class="stats-row">
                 <div class="stat"><strong>ML</strong><small>Applied Systems</small></div>
                 <div class="divider-line"></div>
                 <div class="stat"><strong>115+</strong><small>Day Coding Streak</small></div>
                 <div class="divider-line"></div>
-                <div class="stat"><strong>∞</strong><small>Curiosity</small></div>
+                <div class="stat"><strong>1</strong><small>Industry Role</small></div>
             </div>
             <div class="cta-buttons">
-    <a href="https://github.com/Sneha-4219"          target="_blank" class="btn btn-github">  <i class="fa-brands fa-github"></i>   GitHub</a>
-    <a href="https://leetcode.com/u/SnehaSharma20/"  target="_blank" class="btn btn-leetcode"><i class="fa-solid fa-code"></i>       LeetCode</a>
-    <a href="https://www.linkedin.com/in/sneha2208/" target="_blank" class="btn btn-linkedin"><i class="fa-brands fa-linkedin"></i>  LinkedIn</a>
-    
-   <!-- Updated Resume Button -->
-<a href="./Sneha_Sharma_Resume.pdf" download="Sneha_Sharma_Resume.pdf" class="btn btn-resume">
-    <i class="fa-solid fa-file-pdf"></i> Resume
-</a>    
-</div>
+                <a href="https://github.com/Sneha-4219" target="_blank" rel="noopener noreferrer" class="btn btn-github">
+                    <i class="fa-brands fa-github"></i> GitHub
+                </a>
+                <a href="https://leetcode.com/u/SnehaSharma20/" target="_blank" rel="noopener noreferrer" class="btn btn-leetcode">
+                    <i class="fa-solid fa-code"></i> LeetCode
+                </a>
+                <a href="https://www.linkedin.com/in/sneha2208/" target="_blank" rel="noopener noreferrer" class="btn btn-linkedin">
+                    <i class="fa-brands fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="./Sneha_Sharma_Resume.pdf" download="Sneha_Sharma_Resume.pdf" class="btn btn-resume">
+                    <i class="fa-solid fa-file-pdf"></i> Resume
+                </a>    
+            </div>
         </div>
         <div class="home-img reveal reveal-right">
             <div class="img-wrapper">
@@ -88,22 +96,22 @@
             </div>
             <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 1000px; margin: 0 auto; gap: 2rem; display: grid;">
                 
-                <div class="service-card reveal">
+                <div class="service-card reveal card-blue">
                     <div class="service-icon icon-blue"><i class="fa-solid fa-terminal"></i></div>
                     <h3>C++ & Object-Oriented Design</h3>
-                    <p>Developing robust applications and CLI tools leveraging C++, OOP principles, and the Standard Template Library (STL). Focused on writing clean, modular code with a strong emphasis on memory management, hashing, and optimal system architecture.</p>
+                    <p>Developing <strong>robust applications and CLI tools</strong> leveraging C++, OOP principles, and the Standard Template Library (STL). Focused on writing clean, modular code with a strong emphasis on <strong>memory management, hashing, and optimal system architecture</strong>.</p>
                 </div>
 
-                <div class="service-card reveal">
+                <div class="service-card reveal card-pink">
                     <div class="service-icon icon-pink"><i class="fa-solid fa-layer-group"></i></div>
                     <h3>Data Structures & Algorithms</h3>
-                    <p>Strong foundation in algorithmic problem-solving with a 115+ day consistent coding streak. Proficient in optimizing time and space complexity across core data structures, recursion, and backtracking to engineer highly efficient execution logic.</p>
+                    <p>Strong foundation in <strong>algorithmic problem-solving</strong> with a 115+ day consistent coding streak. Proficient in optimizing <strong>time and space complexity</strong> across core data structures, recursion, and backtracking to engineer highly efficient execution logic.</p>
                 </div>
 
-                <div class="service-card reveal">
+                <div class="service-card reveal card-green">
                     <div class="service-icon icon-green"><i class="fa-brands fa-python"></i></div>
                     <h3>Applied ML & Python Backend</h3>
-                    <p>Building and deploying end-to-end machine learning applications using Python, Pandas, and Scikit-learn. Experienced in feature engineering, model training, and serving interactive web applications via Streamlit.</p>
+                    <p>Building and deploying <strong>end-to-end machine learning applications</strong> using Python, Pandas, and Scikit-learn. Experienced in <strong>feature engineering, model training, and serving interactive web applications</strong> via Streamlit.</p>
                 </div>
 
             </div>
@@ -121,65 +129,85 @@
             <div class="skills-wrapper">
                 <div class="skills-column reveal">
                     <h3 class="skills-cat"><i class="fa-solid fa-code"></i> Languages</h3>
-                    <!-- Ordered high → low for strong first impression -->
                     <div class="skill-item">
-                        <div class="skill-info"><span>Python <small style="color:var(--muted);font-size:.75em;">— ML & Backend</small></span><span>85%</span></div>
-                        <div class="skill-bar"><div class="skill-fill pink-fill" data-width="85"></div></div>
+                        <div class="skill-info"><span>Python <small style="color:var(--muted);font-size:.75em;">— ML & Backend</small></span><span style="color: #00FF66; font-weight: 700;">Building</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-production" data-width="75"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info"><span>C++ <small style="color:var(--muted);font-size:.75em;">— DSA & OOP</small></span><span>80%</span></div>
-                        <div class="skill-bar"><div class="skill-fill yellow-fill" data-width="80"></div></div>
+                        <div class="skill-info"><span>C++ <small style="color:var(--muted);font-size:.75em;">— DSA & OOP</small></span><span style="color: var(--pink-light); font-weight: 700;">Foundational</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-foundational" data-width="45"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info"><span>SQL <small style="color:var(--muted);font-size:.75em;">— Relational Databases</small></span><span>65%</span></div>
-                        <div class="skill-bar"><div class="skill-fill yellow-fill" data-width="65"></div></div>
+                        <div class="skill-info"><span>SQL <small style="color:var(--muted);font-size:.75em;">— Relational Databases</small></span><span style="color: #00FF66; font-weight: 700;">Applied</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-production" data-width="65"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info"><span>Java <small style="color:var(--muted);font-size:.75em;">— Core Principles</small></span><span>45%</span></div>
-                        <div class="skill-bar"><div class="skill-fill pink-fill" data-width="45"></div></div>
+                        <div class="skill-info"><span>Java <small style="color:var(--muted);font-size:.75em;">— Core Principles</small></span><span style="color: var(--pink-light); font-weight: 700;">Foundational</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-foundational" data-width="35"></div></div>
                     </div>
                 </div>
+
                 <div class="skills-column reveal">
                     <h3 class="skills-cat"><i class="fa-solid fa-layer-group"></i> Tools & Engineering</h3>
-                    <!-- Core engineering metrics -->
                     <div class="skill-item">
-                        <div class="skill-info"><span>Data Structures & Algorithms <small style="color:var(--muted);font-size:.75em;">— 115+ Day Streak</small></span><span>85%</span></div>
-                        <div class="skill-bar"><div class="skill-fill yellow-fill" data-width="85"></div></div>
+                        <div class="skill-info"><span>Applied ML <small style="color:var(--muted);font-size:.75em;">— Scikit-learn, Pandas</small></span><span style="color: #00FF66; font-weight: 700;">Building</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-production" data-width="65"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info"><span>Applied ML <small style="color:var(--muted);font-size:.75em;">— Scikit-learn, Pandas, NumPy</small></span><span>75%</span></div>
-                        <div class="skill-bar"><div class="skill-fill grad-fill" data-width="75"></div></div>
+                        <div class="skill-info"><span>DSA <small style="color:var(--muted);font-size:.75em;">— 115+ Day Streak</small></span><span style="color: var(--yellow); font-weight: 700;">Active Learner</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-applied" data-width="55"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info"><span>Git & Version Control <small style="color:var(--muted);font-size:.75em;">— GitHub, Branching</small></span><span>75%</span></div>
-                        <div class="skill-bar"><div class="skill-fill pink-fill" data-width="75"></div></div>
+                        <div class="skill-info"><span>Git & Version Control <small style="color:var(--muted);font-size:.75em;">— GitHub, Branching</small></span><span style="color: #00FF66; font-weight: 700;">Applied</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-production" data-width="80"></div></div>
                     </div>
                     <div class="skill-item">
-                        <div class="skill-info"><span>Web & Deployment <small style="color:var(--muted);font-size:.75em;">— Streamlit, API basics</small></span><span>65%</span></div>
-                        <div class="skill-bar"><div class="skill-fill grad-fill" data-width="65"></div></div>
-                    </div>
-                </div>
-                <div class="skills-tags reveal">
-                    <h3 class="skills-cat"><i class="fa-solid fa-tags"></i> Core Concepts & Focus Areas</h3>
-                    <div class="tag-cloud">
-                        <span class="tag">OOP Architecture</span>
-                        <span class="tag">DBMS</span>
-                        <span class="tag">Operating Systems</span>
-                        <span class="tag">Computer Networks</span>
-                        <span class="tag">Feature Engineering</span>
-                        <span class="tag">Classical Machine Learning</span>
-                        <span class="tag">Data Preprocessing</span>
-                        <span class="tag">Model Deployment</span>
-                        <span class="tag">Streamlit</span>
-                        <span class="tag">Version Control</span>
+                        <div class="skill-info"><span>Web & Deployment <small style="color:var(--muted);font-size:.75em;">— Streamlit, API basics</small></span><span style="color: var(--yellow); font-weight: 700;">Active Learner</span></div>
+                        <div class="skill-bar"><div class="skill-fill fill-applied" data-width="50"></div></div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- ══ EXPERIENCE (NEW) ══ -->
+    <section class="section" id="experience">
+        <div class="section-container">
+            <div class="section-header reveal">
+                <span class="section-tag">Professional Journey</span>
+                <h2>Industry <span class="highlight-yellow">Experience</span></h2>
+                <p>Applying machine learning, backend engineering, and system architecture in production environments.</p>
+            </div>
+            
+            <div class="experience-wrapper">
+                <div class="experience-card reveal">
+                    <div class="exp-top">
+                        <div class="exp-role-company">
+                            <h3>AI Engineering Intern</h3>
+                            <span class="exp-company"><i class="fa-solid fa-building"></i> AI Mill</span>
+                        </div>
+                        <div class="exp-date">
+                            <span class="badge-date"><i class="fa-solid fa-calendar-days"></i> June 2026 — August 2026 | Remote</span>
+                        </div>
+                    </div>
+                    
+                    <ul class="exp-bullets">
+                        <li><strong>Built Scalable Pipelines:</strong> Developed and optimized backend processing pipelines for real-world production systems, streamlining complex data workflows.</li>
+                        <li><strong>Engineered Modular APIs:</strong> Designed integration frameworks to decouple heavy machine learning model logic from the core application layer, ensuring low-latency execution.</li>
+                        <li><strong>Enforced Production Standards:</strong> Collaborated within a cross-functional engineering team to enforce robust version control, clean documentation, and strict security practices.</li>
+                    </ul>
+                    
+                    <div class="exp-tags project-tags">
+                        <span>Python</span><span>Data Pipelines</span><span>Modular APIs</span><span>Production Systems</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
     <!-- ══ PROJECTS ══ -->
-    <section class="section" id="projects">
+    <section class="section section-alt" id="projects"> <!-- Changed to section-alt for styling flow -->
         <div class="section-container">
             <div class="section-header reveal">
                 <span class="section-tag">My Work</span>
@@ -198,7 +226,7 @@
                         </div>
                     </div>
                     <h3>CreditWise — ML Loan System</h3>
-                    <p>Engineered an end-to-end machine learning pipeline to predict loan approvals. Implemented feature scaling, categorical encoding, and trained a Gaussian Naive Bayes classifier (86% accuracy). Serialized the model components and deployed the inference logic via an interactive Streamlit web application.</p>
+                    <p>Engineered an <strong>end-to-end machine learning pipeline</strong> to predict loan approvals. Implemented <strong>feature scaling and categorical encoding</strong>, and trained a Gaussian Naive Bayes classifier (86% accuracy). Serialized the model components and deployed the <strong>inference logic via an interactive Streamlit web application</strong>.</p>
                     <div class="project-tags">
                         <span>Python</span><span>Scikit-learn</span><span>Machine Learning</span><span>Streamlit</span><span>Joblib</span>
                     </div>
@@ -213,7 +241,7 @@
                         </div>
                     </div>
                     <h3>TalktoCity — Multilingual RAG Backend</h3>
-                    <p>Collaborated in a 4-member team to design the application architecture, separating AI processing logic from the core backend. Built a data retrieval pipeline in Python with document chunking and indexing for semantic lookups, plus logic to handle multilingual queries and structured outputs.</p>
+                    <p>Collaborated in a 4-member team to design the <strong>application architecture</strong>, separating AI processing logic from the core backend. Built a <strong>data retrieval pipeline in Python</strong> with document chunking and indexing for <strong>semantic lookups</strong>, plus logic to handle multilingual queries and structured outputs.</p>
                     <div class="project-tags">
                         <span>Python</span><span>LLM Integration</span><span>Data Pipelines</span><span>RAG</span><span>Backend</span>
                     </div>
@@ -229,7 +257,7 @@
     </section>
 
     <!-- ══ CONTACT ══ -->
-    <section class="section section-alt" id="contact">
+    <section class="section" id="contact"> <!-- Removed section-alt for styling flow -->
         <div class="section-container">
             <div class="section-header reveal">
                 <span class="section-tag">Get In Touch</span>
@@ -246,14 +274,14 @@
                         </div>
                     </div>
                     
-
-                    <div class="contact-item">
-                        <div class="contact-icon icon-yellow"><i class="fa-brands fa-linkedin"></i></div>
-                        <div>
-                            <strong>LinkedIn</strong>
-                            <a href="https://www.linkedin.com/in/sneha2208/" target="_blank">sneha2208</a>
-                        </div>
-                    </div>
+                    <!-- Change icon-yellow to icon-blue for LinkedIn -->
+<div class="contact-item">
+    <div class="contact-icon icon-blue"><i class="fa-brands fa-linkedin"></i></div>
+    <div>
+        <strong>LinkedIn</strong>
+        <a href="https://www.linkedin.com/in/sneha2208/" target="_blank">sneha2208</a>
+    </div>
+</div>
                     
                     <div class="contact-item">
                         <div class="contact-icon icon-pink"><i class="fa-brands fa-x-twitter"></i></div>
